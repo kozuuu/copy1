@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+header {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 35px;
+}
+
+nav {
+  /* flex: １; */
+}
+
+ul, li{
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+.main-vsual img {
+  width: 100%;
+}
+
+h2,h3,h4 {
+  font-size: 30px;
+  margin: 30px;
+  text-align: center;
+}
+
+.main {
+  margin: 0 120px;
+  display: flex;
+}
+
+.sample img {
+  margin-right: 30px;
+  width: 700px;
+}
+
+.textbox {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  gap: 40px;
+}
+
+.container img {
+  width: 400px;
+  height: 200px;
+}
+
+h5 {
+  font-size: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+.emailtop p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.email {
+  width: 15cm;
+  height: 1cm;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  border-width: 1.5px;
+  padding: 2px 8px;
+  margin: 0;
+}
+
+form {
+  text-align: center;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-color: #f37053;
+  width: 7cm;
+  height: 1.5cm;
+  border-radius: 8px;
+  border: solid 1px ;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.footer  {
+  width: 960px;
+  float: right;
+  margin-right: 300px;
+  text-align: right;
+  padding: 20px 0;
+  border-top: 1px solid #CCC ;
+}
