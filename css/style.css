@@ -11,6 +11,7 @@
 **/
 input[type=submit] {
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 
