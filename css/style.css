@@ -1,16 +1,26 @@
 @charset "UTF-8";
+
+/**
+* インポート
+**/
 @import url("./reset.css");
 
-body {
-  /* margin: 0; */
+
+/**
+* リセット
+**/
+input[type=submit] {
+	-webkit-appearance: none;
 }
 
+
+/**
+* 共通
+**/
 header {
-  /* width: 960px; */
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
-  /* margin: 0 auto; */
 }
 
 h1 {
@@ -136,10 +146,10 @@ h5 {
   margin: 0 auto;
   text-align: right;
   padding-top: 20px;
-  /* padding-right: 100px; */
   margin-bottom: 20px;
   border-top: 1px solid #ccc;
 }
+
 
 /**
 * レスポンシブ設定
