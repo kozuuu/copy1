@@ -18,6 +18,10 @@ input[type="submit"] {
 /**
 * 共通
 **/
+body {
+  font-family: sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
