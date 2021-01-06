@@ -4,6 +4,7 @@
       <meta charset ="UTF-8">
       <title>30DAYSトライアル</title>
       <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
 
 <body>
@@ -18,40 +19,47 @@
     </nav>
   </header>
 
+  <div class="mainVisual">
+    <img src="img/main-visual.png" alt="トップ画像">
+  </div>
+  
   <main>
-      <article>
-          <div class="main-vsual">
-             <img src="img/main-vsual.png" alt="トップ画像">
-          </div>
+      <article>   
          <h2 id="about">デイトラとは</h2>
-         <div class="main">
-            <div class="sample">
+         <div class="mainItems">
+            <div>
               <img src="img/about.png" alt="サンプル画像">
             </div>
-             <div class="textbox">
+            <div>
               <p>デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで、未経験から３０日でプログラミングスキルが身につきます。<br>１日１題３０日でプロのWebエンジニアを目指しましょう！</p>
-              </div>
+            </div>
          </div>
       </article>
 
       <section>
-        <h3 id="course">コース一覧</h3>
-          <div class="container">
-              <p><img src="img/web_first.png" alt="初級コース"><br>HTML/CSS/Bootstrap</p>
-              <p><img src="img/web_second.png" alt="中級コース"><br>HTML/CSS/Javascript/JQuery</p>
-              <p><img src="img/web_third.png" alt="上級コース"><br>PHP/WordPress</p>
+        <h2 id="course">コース一覧</h2>
+          <div class="courseItemGroup">
+              <div class="courseItem">
+                <img src="img/web_first.png" alt="初級コース">
+                <p>HTML / CSS / Bootstrap</p>
+              </div>
+              <div class="courseItem">
+                <img src="img/web_second.png" alt="中級コース">
+                <p>HTML / CSS / Javascript / JQuery</p>
+              </div>
+              <div class="courseItem">
+              <img src="img/web_third.png" alt="上級コース">
+              <p>PHP / WordPress</p>
           </div>
       </section>
   </main>
 
   <section>
-    <h4 id="form">お問い合わせ</h4>
-      <div class="emailtop">
-        <p>さあ今日から30日間始めよう！</p>
-      </div>
-    <form>
-      <input type="email" placeholder="メールアドレス" class="email"><br>
-      <input type="submit" value="無料ではじめる" class="btn">
+    <h2 id="form">お問い合わせ</h2>
+    <p class="message">さあ今日から30日間始めよう！</p>
+    <form class="mailForm">
+      <input type="email" placeholder="メールアドレス" class="email">
+      <input type="submit" value="無料ではじめる" class="submitBtn">
     </form>
   </section>
 

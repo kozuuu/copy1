@@ -1,100 +1,131 @@
 @charset "UTF-8";
+@import url("./reset.css");
+
+body {
+  /* margin: 0; */
+}
 
 header {
-  width: 960px;
+  /* width: 960px; */
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  padding: 0 100px;
+  /* margin: 0 auto; */
 }
 
 h1 {
   font-size: 30px;
+  font-weight: bold;
   margin: 35px;
 }
 
-nav {
-  /* flex: １; */
-}
-
-ul, li{
+ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 20px;
 }
 
-.main-vsual img {
+li {
+  padding-top: 15px;
+  margin: 25px 15px;
+}
+
+header a, header a:link,  header a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #999;
+}
+
+.mainVisual img {
   width: 100%;
+  height: auto;
 }
 
-h2,h3,h4 {
+h2 {
   font-size: 30px;
-  margin: 30px;
+  font-weight: bold;
+  margin: 50px 30px;
   text-align: center;
 }
 
-.main {
-  margin: 0 120px;
+.mainItems {
+  margin: 0 100px;
   display: flex;
 }
 
-.sample img {
-  margin-right: 30px;
-  width: 700px;
+.mainItems img {
+  width: 650px;
+  height: auto;
 }
 
-.textbox {
-  font-size: 17px;
+.mainItems p  {
+  font-size: 20px;
   font-weight: bold;
+  line-height: 30px;
+  margin-left: 45px;
 }
 
-.container {
+.courseItemGroup {
   display: flex;
-  justify-content: center;
-  font-size: 25px;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 100px;
 }
 
-.container img {
+.courseItemGroup img {
   width: 400px;
-  height: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.courseItemGroup p {
+  margin-top: 0;
+  font-size: 24px;
+  word-break: break-word;
 }
 
 h5 {
   font-size: 15px;
+  font-weight: bold;
   margin: 20px;
   text-align: center;
 }
 
-.emailtop p {
+.message  {
   font-size: 20px;
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .email {
-  width: 15cm;
-  height: 1cm;
+  width: 500px;
+  height: 35px;
   border: solid 1px #ccc;
   border-radius: 20px;
-  border-width: 1.5px;
+  border-width: 1px;
   padding: 2px 8px;
   margin: 0;
 }
 
-form {
-  text-align: center;
+.mailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.btn {
+.submitBtn {
   font-size: 20px;
   font-weight: bolder;
   color: rgb(255, 255, 255);
   background-color: #f37053;
-  width: 7cm;
-  height: 1.5cm;
-  border-radius: 8px;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
   border: solid 1px ;
   margin-top: 10px;
   margin-bottom: 80px;
@@ -102,9 +133,120 @@ form {
 
 .footer  {
   width: 960px;
-  float: right;
-  margin-right: 300px;
+  margin: 0 auto;
   text-align: right;
-  padding: 20px 0;
-  border-top: 1px solid #CCC ;
+  padding-top: 20px;
+  /* padding-right: 100px; */
+  margin-bottom: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/**
+* レスポンシブ設定
+**/
+@media screen and (max-width:479px) { 
+  header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  ul {
+    font-size: 12px;
+    padding: 0 30px;
+  }
+
+  li {
+    padding: 0;
+    margin: 12px 16px;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .mainVisual img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+
+  .mainItems {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .mainItems img {
+    width:100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .mainItems p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 30px 5px;
+  }
+
+  .courseItemGroup {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .courseItemGroup .courseItem {
+    margin: 15px 0;
+  }
+
+  .courseItemGroup .courseItem {
+    width: 100%;
+  }
+
+  .courseItemGroup .courseItem img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .courseItemGroup .courseItem p {
+    font-size: 15px;
+  }
+
+  .message {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+
+  .email {
+    width: 320px;
+    height: auto;
+    padding: 16px 8px;
+    border-radius: 32px;
+    margin-bottom: 16px;
+  }
+
+  .submitBtn {
+    width: 330px;
+    height: auto;
+    font-size: 15px;
+    padding: 16px 8px;
+  }
+
+  .footer {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
 }
