@@ -67,7 +67,6 @@ header {
 }
 
 h1 {
-  /* font-size: 30px; */
   font-weight: bold;
   margin: 36px;
 }
@@ -76,7 +75,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  /* font-size: 20px; */
   font-weight: bold;
 }
 
@@ -105,14 +103,12 @@ main {
 }
 
 h2 {
-  /* font-size: 30px; */
   font-weight: bold;
   margin: 48px 0;
   text-align: center;
 }
 
 .mainItems {
-  /* margin: 0 100px; */
   display: flex;
   justify-content: center;
 }
@@ -123,7 +119,6 @@ h2 {
 }
 
 .mainItems p  {
-  /* font-size: 20px; */
   font-weight: bold;
   line-height: 32px;
   margin-left: 44px;
@@ -132,10 +127,7 @@ h2 {
 .courseItemGroup {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: center;
-  /* margin: 0 100px; */
-  /* margin: 0 auto; */
   align-items: center;
 }
 
@@ -159,12 +151,10 @@ h2 {
 
 .courseItemGroup p {
   margin-top: 0;
-  /* font-size: 24px; */
   word-break: break-word;
 }
 
 .message  {
-  /* font-size: 20px; */
   text-align: center;
   margin: 10px 0;
 }
@@ -186,7 +176,6 @@ h2 {
 }
 
 .submitBtn {
-  /* font-size: 20px; */
   font-weight: bolder;
   color: rgb(255, 255, 255);
   background-color: #f37053;
@@ -194,7 +183,6 @@ h2 {
   height: 48px;
   border-radius: 6px;
   border: solid 1px ;
-  /* margin-top: 10px; */
   margin: 16px auto; 
 }
 
@@ -220,7 +208,6 @@ h2 {
   }
 
   h1 {
-    /* font-size: 20px; */
     margin: 20px 0;
     text-align: center;
   }
@@ -238,6 +225,7 @@ h2 {
   main {
     width: 100%;
     padding: 0 16px;
+    box-sizing: border-box;
   }
 
   .mainVisual img {
@@ -264,19 +252,17 @@ h2 {
 
   .mainItems p {
     font-weight: normal;
-    /* font-size: 15px; */
     line-height: 20px;
     margin: 32px 6px;
   }
 
   .courseItemGroup ul {
     display: block;
-    /* flex-direction: column; */
     margin: 0 auto;
   }
 
   .courseItemGroup .courseItem {
-    margin: 16px 0;
+    margin: 0;
     width: 100%;
   }
 
@@ -285,16 +271,15 @@ h2 {
     margin-bottom: 6px;
   }
   .courseItemGroup .courseItem p {
-    /* font-size: 15px; */
+    margin-bottom: 16px;
   }
 
   .message {
-    /* font-size: 15px; */
     padding: 20px 0;
   }
 
   .email {
-    width: 320px;
+    width: 308px;
     height: auto;
     padding: 16px 8px;
     border-radius: 32px;
@@ -304,13 +289,11 @@ h2 {
   .submitBtn {
     width: 320px;
     height: auto;
-    /* font-size: 15px; */
     padding: 16px 8px;
   }
 
   .footer {
     width: 100%;
-    /* font-size: 10px; */
     text-align: center;
     padding: 12px 0;
   }
