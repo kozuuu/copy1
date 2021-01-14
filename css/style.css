@@ -119,6 +119,7 @@ h2 {
 }
 
 .mainItems p  {
+  font-size: 20px;
   font-weight: bold;
   line-height: 32px;
   margin-left: 44px;
@@ -271,6 +272,7 @@ h2 {
     margin-bottom: 6px;
   }
   .courseItemGroup .courseItem p {
+    font-size: 14px;
     margin-bottom: 16px;
   }
 
