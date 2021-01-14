@@ -165,7 +165,6 @@ h2 {
   height: 36px;
   border: solid 1px #ccc;
   border-radius: 20px;
-  border-width: 1px;
   padding: 2px 8px;
   margin: 0;
 }
@@ -183,7 +182,7 @@ h2 {
   width: 248px;
   height: 48px;
   border-radius: 6px;
-  border: solid 1px ;
+  border: solid 1px transparent;
   margin: 16px auto; 
 }
 
